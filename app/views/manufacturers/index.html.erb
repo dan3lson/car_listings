@@ -1,0 +1,16 @@
+<h1>
+  Manufacturers
+  <%= link_to "+", new_manufacturer_path, class: "btn btn-default" %>
+</h1>
+
+<div class="row lead">
+  <% @manufacturers.each do |m| %>
+    <div class="col-sm-3">
+      <h4><%= m.country %></h4>
+      <p>
+        <%= link_to "Edit", edit_manufacturer_path(m), class: "btn btn-default" %>
+        <%= link_to "Delete", manufacturer_path(m), method: :delete, class: "btn btn-default" %>
+      </p>
+    </div>
+  <% end %>
+</div>

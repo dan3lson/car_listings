@@ -1,7 +1,27 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* Uncomment if using a navbar */
-/* body {
+body {
   padding-top: 60px;
-} */
+  background: url("Letty.png") fixed;
+  background-size: cover;
+}
+
+#body_content {
+  background: #fff;
+  opacity: .9;
+  color: #000;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+.car_container {
+  border-bottom: 1px solid #F2F2F2;
+  border-right: 1px solid #F2F2F2;
+}
+
+.center {
+  text-align: center;
+}

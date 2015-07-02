@@ -1,16 +1,15 @@
 FactoryGirl.define do
-  # Below are example factories that can be used
-  # in your unit and acceptance tests.
-  
-  # factory :person do
-  #   fname "John"
-  #   lname "Doe"
-  # end
-  #
-  # factory :car do
-  #   color "black"
-  #   type "S"
-  #   maker "Tesla"
-  #   person
-  # end
+  factory :manufacturer do
+    name "Tesla"
+    country "USA"
+  end
+
+  factory :car do
+    color "black"
+    description "Thing of beauty inside and out."
+    year 1933
+    mileage 3
+
+    manufacturer
+  end
 end

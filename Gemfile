@@ -48,5 +48,5 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   # Enables you to use fake people, places, or things (e.g. addresses)
-  # gem 'faker'
+  gem 'faker'
 end
